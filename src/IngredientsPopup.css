@@ -1,0 +1,93 @@
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-height: 80%; 
+  overflow-y: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.popup h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.popup form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.popup input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.popup button {
+  padding: 8px 16px;
+  margin: 5px; 
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+  display: inline-block; 
+  transition: background-color 0.3s ease;
+}
+
+.popup button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.ingredient-button {
+  /* ...Existing CSS... */
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+  padding: 8px 16px;
+  display: inline-block; 
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+.ingredient-button.selected {
+  background-color: #007bff !important;
+  color: #fff;
+}
+
+.button-group {  
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-group button{
+  width : auto ;
+  background-color: greenyellow;
+
+}

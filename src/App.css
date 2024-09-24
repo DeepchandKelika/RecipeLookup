@@ -1,0 +1,231 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Search form styles */
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.2s;
+}
+
+.filter-button:hover {
+  background-color: #1a682c;
+}
+
+/* Filter styles */
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-item label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Dropdown styles */
+.Dropdown-control {
+  width: 180px;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.Dropdown-menu {
+  position: absolute;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.Dropdown-menu .Dropdown-option {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.Dropdown-menu .Dropdown-option:hover {
+  background-color: #f0f0f0;
+}
+
+/* Recipe styles */
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recipe {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.recipe:hover {
+  transform: translateY(-2px);
+}
+
+.recipe-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recipe-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Popup styles */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-height: 80%;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.popup h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.popup button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.ingredient-button {
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.ingredient-button.selected {
+  background-color: #007bff !important;
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
