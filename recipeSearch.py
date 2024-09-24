@@ -12,9 +12,9 @@ client = MongoClient(MONGO_URI)
 db = client['recipe_db']
 collection = db['recipes']
 
-
-API_ID = '5ad2224f'
-API_KEY = '38d2a6e6ed8512ffb2c8a803cccdc75b'
+#Get them from EDAMAME API
+API_ID = 'API_ID'
+API_KEY = 'API_KEY'
 
 
 @app.route('/whatcanimake')
